@@ -1,0 +1,278 @@
+@charset "utf-8";
+body{
+    font-family: 'noto sans kr', sans-serif;
+    color: #212121;
+}
+.w400{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Header 수정 전(공통 헤더 적용 전) */
+/* header{
+    margin-top: 100px;
+}
+.logo{
+    text-align: center;
+}
+.logo a img{
+    width: 158px;
+    height: 58px;
+} */
+
+/* Main */
+main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #212121;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+/* 회원정보 입력 */
+.form_wrap{
+    margin-bottom: 50px;
+}
+.title_box{
+    display: flex;
+    justify-content: space-between;
+}
+.title_box p{
+    font-size: 13px;
+}
+.title_box p::before{
+    content: "* ";
+    color: #0080ff;
+    font-weight: 700;
+}
+.form_box{
+    margin-top: 20px;
+}
+.form_box label, input{
+    display: block;
+}
+.form_box label{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.form_box label::after{
+    content: " *";
+    color: #0080ff;
+    font-weight: 700;
+}
+.form_box input{
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+}
+.form_box input:focus{
+    border: 2px solid #0080ff;
+    outline: 0;
+}
+.pwsafey_boxes{
+    width: 100%;
+    height: 19px;
+    margin-top: 8px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.bars{
+    padding: 9px 0;
+    /* 플렉스 */
+    display: flex;
+}
+.bar{
+    width: 80px;
+    height: 3px;
+    background-color: #d5d5d5;
+}
+.bar:nth-child(2){
+    margin: 0 3px;
+}
+.pwsafey_boxes p{
+    font-size: 13px;
+    color: #747474;
+    margin: 0;
+    padding: 0;
+}
+.pw_condition p{
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #747474;
+}
+.fa-check{
+    color: #d5d5d5;
+}
+#pw_ch{
+    background-color: #f6f6f6;
+}
+/* 비밀번호 눈 표시 */
+label[for^="pw"]{
+    /* 눈 포지션 위치 기준 */
+    position: relative;
+}
+label[for^="pw"] i{
+    font-size: 1.2em;
+    color: #d5d5d5;
+    cursor: pointer;
+    /* 눈 포지션 */
+    position: absolute;
+    right: 4%;
+    bottom: -300%;
+    z-index: 999;
+}
+
+#email, #birth{
+    width: 273px;
+}
+.email_boxes{
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.btn_email{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    width: 120px;
+    height: 44px;
+    background-color: #747474;
+    border-radius: 5px;
+    padding: 15px 19px;
+    cursor: pointer;
+}
+.birth_boxes{
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.sexuality{
+    /* 플렉스 */
+    display: flex;
+}
+.sexuality input{
+    display: none;
+}
+.sexuality label{
+    font-size: 14px;
+    width: 60px;
+    height: 44px;
+    background-color: #f6f6f6;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    padding: 15px 23px;
+    cursor: pointer;
+}
+.sexuality label::after{
+    content: "";
+}
+.sexuality label:nth-child(2){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.sexuality label:nth-child(4){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+/* 성별 체크 */
+.sexuality input:checked+label{
+    background-color: #0080ff75;
+    border: 1px solid #66BEFF;
+}
+
+/* 서비스 이용약관 동의 */
+.check_wrap{
+    margin-bottom: 40px;
+}
+.check_row input{
+    display: none;
+
+}
+.check_row label{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.check_row label>i{
+    font-size: 22px;
+    color: #d5d5d5;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.check_row label>p{
+    font-size: 14px;
+    padding: 2px 0 16px 5px;
+}
+/* input 체크되면 폰트어썸 색 변경 */
+.check_row input:checked+label>i{
+    color: #0080ff;
+}
+label[for="chk_1"]{
+    font-weight: 700;
+}
+.check_row label span{
+    color: #0080ff;
+}
+.check_row label b{
+    color: #747474;
+    font-weight: 400;
+}
+.check_row ul{
+    padding-top: 16px;
+    border-top: 1px solid #d5d5d5;
+}
+.check_row ul li{
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.check_row ul li a{
+    font-size: 13px;
+}
+.check_row:last-child li:last-child{
+    /* 맨 마지막 체크 플렉스 제거 */
+    display: block;
+}
+.chk_market label>i{
+    margin-left: 24px;
+    margin-bottom: 6px;
+}
+.chk_market>p{
+    font-size: 13px;
+    margin-left: 24px;
+}
+
+/* 회원가입 버튼 */
+.complete_btn{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+
+    width: 100%;
+    height: 50px;
+    background-color: #0080ff;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+/* 여백 추가 */
+.w400{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}

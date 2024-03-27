@@ -1,0 +1,333 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #212121;
+}
+.w890 {
+    width: 890px;
+}
+.w274 {
+    width: 274px;
+}
+/* 상단바 */
+/* 주문종류 */
+.top_navi {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.order_title {
+    margin-left: 344px;
+    width: 200px;
+    height: 44px;
+    border-radius: 44px;
+    border: 1px solid #4c4c4c;
+    background-color: #fff;
+    /* 포지션 */
+    position: relative;
+}
+.order_title button {
+    width: 98px;
+    height: 44px;
+    border-radius: 44px;
+    text-align: center;
+    color: #4c4c4c;
+    cursor: pointer;
+    cursor: pointer;
+}
+.order_title button:first-child {
+    /* 포지션 */
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+.order_title button:last-child {
+    /* 포지션 */
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+.order_title button[class="order_sort_btn active"] {
+    background: #4c4c4c;
+    color: #fff;
+}
+.order_title p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 주문순서 */
+.order_step {}
+.order_step ul {
+    align-items: baseline;
+    /* 플렉스 */
+    display: flex;
+}
+.order_step > ul > li {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #d5d5d5;
+}
+.order_step > ul > li:first-child {
+    margin-left: 0;
+}
+.order_step .step_num {
+    width: 20px;
+    height: 20px;
+    background-color: #d5d5d5;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 50%;
+    margin-right: 6px;
+    font-weight: 600;
+}
+.order_step .step_title {
+    font-weight: 600;
+    color: #d5d5d5;
+
+}
+.order_step ul li[class="active"] .step_num {
+    background-color: #0080ff;
+}
+.order_step ul li[class="active"] .step_title {
+    color: #000;
+}
+
+/* 장바구니 메인 */
+.cart_main {
+    margin-bottom: 50px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 선택바 */
+.item_list {
+    width: 890px;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 전체선택 */
+.item_list_left {}
+.item_list_left > input {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.item_list_left label {
+    font-size: 14px;
+    line-height: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 아이템버튼 */
+.item_list_right {}
+.item_list_right button {
+    font-size: 12px;
+    height: 30px;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+
+}
+.item_list_right button i {
+    font-size: 14px;
+}
+.item_list_right button[class="like_btn"],
+.item_list_right button[class="trash_btn"] {
+    padding: 0;
+    width: 30px;
+}
+
+/* 제품목록 */
+.prod_list {
+    width: 890px;
+    min-height: 242px;
+    padding: 65px;
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+}
+.empty_list {
+    align-items: center;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.empty_list p{
+    margin-bottom: 12px;
+}
+.empty_list p:last-child{
+    margin-bottom: 0;
+}
+.empty_list .empty_list_icon i {
+    font-size: 36px;
+    color: #d5d5d5;
+}
+.empty_list .empty_list_msg {
+    font-size: 14px;
+    color: #a6a6a6;
+}
+.empty_list .empty_list_btn {
+    height: 36px;
+    width: 64px;
+    background-color: #0080ff;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.empty_list .empty_list_btn a {
+    line-height: 2.5714;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 제품주문박스 */
+.order_list{
+    width: 274px;
+    height: 280px;
+    background-color: #fff;
+    border: 1px solid #4c4c4c;
+    border-radius: 10px;
+    padding: 24px;
+    /* 포지션 */
+    position: sticky;
+    top: 456px;
+    align-self: flex-start;
+}
+.order_list ul{
+    margin-bottom: 20px;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.order_list ul:last-child{
+    margin-bottom: 24px;
+}
+.payment_info{}
+.payment_info ul>.label{
+    font-size: 16px;
+    line-height: 16px;
+}
+.payment_info ul>.price{
+    font-size: 18px;
+}
+.order_list .line{
+    width: 225px;
+    height: 1px;
+    background-color: #4c4c4c;
+    margin-bottom: 24px;
+}
+
+.payment_final{}
+.payment_final .total_label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.payment_final .total_price{
+    font-size: 20px;
+}
+.payment_final .point_label{
+    font-size: 14px;
+}
+.payment_final .point{
+    font-size: 14px;
+}
+
+.order_list .order_btn{
+    margin-left: -8px;
+    width: 240px;
+    height: 50px;
+    background-color: #0080ff;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.order_list span{
+    font-weight: 600;
+}
+
+
+/* 결제혜택 */
+.payment_benefit{
+    width: 890px;
+    margin-bottom: 50px;
+}
+.payment_box{
+    margin-top: 24px;
+    /* 플렉스 */
+    display: flex;
+}
+.payment_box>div {
+    width: 284px;
+    height: 84px;
+    padding: 0 20px;
+    margin-left: 18px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    align-items: center;
+    /* 플렉스 */
+    display: flex;
+    justify-content: space-between;
+}
+.payment_box>div:first-child{
+    margin-left: 0;
+}
+.payment_box .brand{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.payment_box .desc{
+    font-size: 14px;
+}
+.payment_box img{
+    width: 70px;
+    object-fit: contain;
+}
+
+/* 유의사항 */
+.warn_box{
+    background-color: #f6f6f6;
+    width: 890px;
+    height: 214px;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 100px;
+}
+.warn_box h2{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.warn_msg li{
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-bottom: 15px;
+}
+.warn_msg li:last-child{
+    margin-bottom: 0;
+}
+
+
+

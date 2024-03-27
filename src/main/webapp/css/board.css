@@ -1,0 +1,221 @@
+@charset "utf-8";
+body{
+    font-family: 'noto sans kr', sans-serif;
+    color: #212121;
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w220{
+    width: 220px;
+}
+.w980{
+    width: 980px;
+}
+
+
+/* Main */
+/* Content Box */
+.faq_wrap{
+    display: flex;
+}
+
+/* SNB 영역 */
+aside>h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.snb_list{
+    height: 600px;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.snb_list>li{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+.snb_sub_list>li{
+    font-size: 14px;
+}
+.snb_list>li a:hover{
+    text-decoration: underline;
+}
+.snb_service{
+    width: 174px;
+    border-top: 1px solid #d5d5d5;
+    padding-top: 24px;
+}
+.snb_service:last-child{
+    margin-top: 24px;
+}
+.snb_service h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.snb_service p{
+    font-size: 13px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.snb_service p span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #0080ff;
+}
+.service_btn{
+    font-size: 12px;
+    text-align: center;
+    width: 132px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+/* FAQ contents 영역 */
+.w980>h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.w980>h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main .search{
+    width: 100%;
+    height: 84px;
+    background-color: #0080ff30;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+main .search #search_box{
+    width: 408px;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+}
+main .search>button{
+    width: 86px;
+    height: 44px;
+    background-color: #0080ff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+}
+.w980 .snb_sub_list{
+    color: #4c4c4c;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-bottom: 70px;
+}
+.w980 .snb_sub_list li{
+    text-align: center;
+    width: 326px;
+    height: 50px;
+    padding: 17px;
+    border: 1px solid #d5d5d5;
+}
+/* 테두리 둥글게 */
+.w980 .snb_sub_list li:nth-child(1){
+    border-top-left-radius: 10px;
+}
+.w980 .snb_sub_list li:nth-child(3){
+    border-top-right-radius: 10px;
+}
+.w980 .snb_sub_list li:nth-child(7){
+    border-bottom-left-radius: 10px;
+}
+.w980 .snb_sub_list li:nth-child(9){
+    border-bottom-right-radius: 10px;
+}
+/* 겹치는 bd 제거 */
+.w980 .snb_sub_list li:nth-child(4),
+.w980 .snb_sub_list li:nth-child(5),
+.w980 .snb_sub_list li:nth-child(6){
+    border-top: 0;
+    border-bottom: 0;
+}
+.w980 .snb_sub_list li:nth-child(2),
+.w980 .snb_sub_list li:nth-child(5),
+.w980 .snb_sub_list li:nth-child(8){
+    border-left: 0;
+    border-right: 0;
+}
+.active{
+    background-color: #0080ff;
+    color: #fff;
+    border: 0;
+}
+
+.best_10_wrap{
+    border-top: 1px solid #000;
+}
+article{
+    border-bottom: 1px solid #d5d5d5;
+}
+.que{
+    font-size: 13px;
+    padding: 30px 20px 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.que h2 span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #0080ff;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+
+}
+.fa-search{
+    color: #fff;
+}
+.toggle_btn{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ans{
+    font-size: 14px;
+    line-height: 2;
+    width: 960px;
+    background-color: #f6f6f6;
+    padding: 24px 24px 24px 40px;
+    border-radius: 5px;
+    margin: 0 10px 30px 10px;
+    position: relative;
+}
+.ans::before{
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 34px;
+    width: 8px;
+    height: 9px;
+    background: url(../images/board_replyarw_1.png) 0% 0% no-repeat;
+    background-size: 8px 9px;
+}
+article:last-child{
+    margin-bottom: 150px;
+}

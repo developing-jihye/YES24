@@ -1,0 +1,89 @@
+@charset "utf-8";
+main{
+	margin-bottom: 100px;
+}
+.write{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.line{
+    width: 100%;
+    background: #212121;
+    height: 1px;
+    margin: 30px 0 25px 0;
+}
+table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+tr{
+    width: 100%;
+    height: auto;
+}
+th{
+    width: 160px;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 600;
+    vertical-align: top;
+    padding-left: 10px;
+}
+td{
+    width: 800px;
+    padding-right: 10px;
+}
+select option[value=""][disabled] {
+	display: none;
+}
+.type{
+    padding-bottom: 24px;
+}
+.write_box{
+    border: 1px solid #A6A6A6;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+}
+.btn_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin: 0 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.sub_btn{
+    background: #0080ff;
+}
+.reset_btn{
+    background-color: #767676;
+}
+
+.qna_notice{
+    padding: 24px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.qna_notice h3{
+    line-height: 2;
+    font-weight: 600;
+}
+.qna_notice>ul li{
+    font-weight: 600;
+}
+.qna_notice>ul li:nth-child(-n+3){
+    color: #888;
+}
+.qna_notice>ul li>span{
+    color: #000;
+}
